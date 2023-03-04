@@ -113,13 +113,19 @@ body {
 */
 /* ============ mobile view .end// ============ */
 
-#loginModal .modal-body {
+#loginModal .modal-header {
     color: blanchedalmond;
     background-image: linear-gradient(to right, #70d035, #a8367d, #60106B);
     opacity: 0.8;
 }
 
-#loginModal .modal-header {
-    background-color: black;
-    color: blanchedalmond;
+#loginModal .modal-body {
+    color: black;
+    background-image: linear-gradient(to bottom, #a8367d, #70d035, blanchedalmond);
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
 }
