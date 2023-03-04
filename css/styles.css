@@ -1,0 +1,125 @@
+.jumbotron,
+footer {
+    color: blanchedalmond;
+    background-image: linear-gradient(to right, #70d035, #a8367d, #60106B);
+    opacity: 0.8;
+}
+
+.navbar {
+    background-color: black;
+    /* background-color: rgb(108, 92, 92); */
+    /*
+    padding: .5rem 1rem;
+    */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: -12px;
+    color: gray;
+    transition: transform 2s ease, opacity .5s ease-out
+}
+
+.carousel-item {
+    background-color: white;
+}
+
+body {
+    background-image: url('../img/guitar1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+#boIdx {
+    background-size: 30%;
+    background-repeat: repeat;
+}
+*/
+
+#boAbt {
+    background-size: 30%;
+}
+
+/*
+.bgImageDeck{
+*/
+#carouselExampleDark {
+    background-color: white;
+}
+
+/*
+.carousel  { z-index: -99; }
+.carousel .item {
+    position: fixed;
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+*/
+/*
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+*/
+
+#jumbotron-checkout:hover {
+    background-color: blanchedalmond;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px
+}
+
+/*
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-warning);
+}
+*/
+
+/*
+.navbar .megamenu{ padding: 1rem; }
+*/
+/* ============ desktop view ============ */
+/*
+@media all and (min-width: 992px) {
+
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}
+*/
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+/*
+@media(max-width: 991px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+}
+*/
+/* ============ mobile view .end// ============ */
+
+#loginModal .modal-body {
+    color: blanchedalmond;
+    background-image: linear-gradient(to right, #70d035, #a8367d, #60106B);
+    opacity: 0.8;
+}
+
+#loginModal .modal-header {
+    background-color: black;
+    color: blanchedalmond;
+}

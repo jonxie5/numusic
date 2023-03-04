@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/ecb066ee47.js" crossorigin="anonymous"></script>
+    <title>NuMusic: Your NuMusic Hub</title>
+</head>
+
+<body style="background-image: url('img/dark-piano-2.jpg'); background-size: cover;">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img class="img-fluid" src="img/beatles-collections-italian.jpg" />
+                </div>
+                <div class="col">
+                    <h1>NuMusic</h1>
+                    <h2>Your NuMusic Hub</h2>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-outline-light btn" role="button" data-bs-toggle="modal"
+                        data-bs-target="#reserveModal">Current Track Scoreboards</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar"
+                aria-exapnded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fa-solid fa-peace"></i> Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="instruments.html"><i class="fa-solid fa-drum-steelpan"></i>
+                    Instruments</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"  href=""><i class="fa-brands fa-python"></i>
+                            CloudTracks
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="references.html">
+                                References
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </a></li>
+                            <li><a class="dropdown-item" href="top50s.html">
+                                Top50s
+                                <i class="fa-brands fa-itunes-note"></i>
+                            </a></li>
+                            <li><a class="dropdown-item" href="lives.html">
+                                LiveStreams
+                                <i class="fa-solid fa-headphones"></i>
+                            </a></li>
+                            <li><a class="dropdown-item" href="library.html">
+                                Library
+                                <i class="fa-solid fa-landmark"></i>
+                            </a></li>
+                            <li><a class="dropdown-item" href="camps.html">
+                                BandCamps
+                                <i class="fa-brands fa-bootstrap"></i>
+                            </a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item"><a class="nav-link" href="store.html"><i class="fa-solid fa-store"></i>
+                            Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guides.html"><i class="fa-brands fa-node"></i>
+                            Guides</a></li>
+                </ul>
+                <span class="navbar-text ms-auto">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fa-brands fa-react"></i> Sign-In
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+    </div>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
