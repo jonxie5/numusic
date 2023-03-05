@@ -115,7 +115,8 @@ body {
 
 #loginModal .modal-header {
     color: blanchedalmond;
-    background-image: linear-gradient(to right, #70d035, #a8367d, #60106B);
+    /* background-image: linear-gradient(to right, #70d035, #a8367d, #60106B); */
+    background-color: black;
     opacity: 0.8;
 }
 
