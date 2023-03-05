@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top" role="navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <a class="navbar-brand btn p-0" href="#"><img src="img/logo.png" height="30" width="30" data-bs-toggle="offcanvas" href="#quickNav" aria-controls="quickNav"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#numusicNavbar"
                 aria-exapnded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,21 +61,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="instruments.html" data-bs-placement="bottom"
-                            data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                            data-bs-title="InstrumentDB"><i class="fa-solid fa-drum"></i>
+                    <li class="nav-item"><a class="nav-link" href="instruments.html"><i class="fa-solid fa-drum"></i>
                             Instruments</a></li>
-                    <li class="nav-item"><a class="nav-link" href="library.html" data-bs-placement="bottom"
-                            data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                            data-bs-title="Time to Study.."><i class="fa-solid fa-landmark"></i>
+                    <li class="nav-item"><a class="nav-link" href="library.html"><i class="fa-solid fa-landmark"></i>
                             Library</a></li>
-                    <li class="nav-item"><a class="nav-link" href="store.html" data-bs-placement="bottom"
-                            data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-title="nuMusic"><i
-                                class="fa-solid fa-shop"></i>
+                    <li class="nav-item"><a class="nav-link" href="store.html"><i class="fa-solid fa-shop"></i>
                             Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guides.html" data-bs-placement="bottom"
-                            data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
-                            data-bs-title="nuMusic Guides"><i class="fa-regular fa-eye"></i>
+                    <li class="nav-item"><a class="nav-link" href="guides.html"><i class="fa-regular fa-eye"></i>
                             Guides</a></li>
                 </ul>
                 <!--
@@ -86,23 +78,51 @@
                                 data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
                                 data-bs-toggle="tooltip" data-bs-title="Search nuMusic"></i></a>
                     </form>
+                <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                 </span>
+                <span class="navbar-text text-muted ms-auto p-0" style="text-decoration: none;">
+                    <a class="btn" style="text-decoration: none;" role="button" type="button" data-bs-toggle="offcanvas" href="#loginCanvas" aria-controls="loginCanvas">
                 -->
-                <span class="navbar-text ms-auto p-0">
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link btn" role="button" type="button" data-bs-toggle="offcanvas" href="#loginCanvas" aria-controls="loginCanvas">
                         Sign-In
                         <i class="fa-regular fa-user"></i>
                     </a>
+                    </li>
+                </ul>
+                <!--
                 </span>
+                -->
             </div>
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="quickNav" aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">QuickNav</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Shortcuts to popular pages:</p>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="loginCanvas" aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+           <h5 class="offcanvas-title" id="offcanvasDarkLabel">Sign-In Page</h5>
+           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Place offcanvas content here.</p>
+        </div>
+    </div>
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title"><i class="fa-brands fa-react"></i> SignIn</h3>
+                    <h3 class="modal-title"><i class="fa-brands fa-react"></i> Sign-In</h3>
                     <button type="button" class="close" data-bs-dismiss="modal"><i
                             class="fa-solid fa-xmark"></i></button>
                 </div>
@@ -129,9 +149,9 @@
                                 </div>
                                 -->
                             </div>
-                            <div class="form-row pt-2">
-                                <button type="submit" class="btn btn-primary ml-1" style="z-index: 10000;">Sign in</button>
-                                <button type="button" class="btn btn-secondary ml-auto" style="z-index: 10000;"
+                            <div class="form-row pt-2" style="opacity: 1;">
+                                <button type="submit" class="btn btn-primary ml-1" style="opacity: 1;">Sign in</button>
+                                <button type="button" class="btn btn-secondary ml-auto" style="opacity: 1;"
                                     data-bs-dismiss="modal">Cancel</button>
                             </div>
                         </form>
@@ -144,7 +164,7 @@
     <footer class="site-footer fixed-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-6 text-start">
+                <div class="col-5 text-start">
                     <div class="btn-group" role="group">
                         <a class="btn" href="http://instagram.com/" data-bs-placement="top"
                             data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
@@ -161,7 +181,12 @@
                             data-bs-title="nuMusic Youtube Channel"><i class="fa fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-2 text-center">
+                        <a href="/" class="btn" role="button" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                            data-bs-title="D.S."><i class="fa-solid fa-peace"></i></a>
+                </div>
+                <div class="col-5 text-end">
                     <div class="btn-group" role="group">
                         <a href="instruments.html" class="btn" role="button" data-bs-placement="top"
                             data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
